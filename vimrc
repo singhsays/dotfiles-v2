@@ -8,17 +8,16 @@ match LineTooLong /\%>80v.\+/
 "Keymaps
 cmap w!! w !sudo tee % >/dev/null
 nmap <silent> ,/ :nohlsearch<CR>
-map <F9> :let &background = ( &background == "dark"? "light" : "dark")<CR>
 nnoremap <F2> :set invpaste paste?<CR>
 imap <F2> <C-O><F2>
 
 "Variables
 let is_bash=1
-let java_allow_cpp_keywords=1
-let java_highlight_functions=1
 let g:molokai_original=1
 let g:airline_powerline_fonts=1
-let g:airline_theme='powerlineish'
+let g:airline_theme='luna'
+let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tmuxline#enabled=0
 let g:rehash256=1
 
 "Options
@@ -61,10 +60,9 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'bling/vim-airline'
-Bundle 'tpope/vim-haml'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'digitaltoad/vim-jade'
-Bundle 'curist/vim-angular-template'
+Bundle 'chrisbra/csv.vim'
+Bundle 'edkolev/promptline.vim'
+Bundle 'edkolev/tmuxline.vim'
 Bundle 'groenewege/vim-less'
 Bundle 'elzr/vim-json'
 Bundle 'avakhov/vim-yaml'
