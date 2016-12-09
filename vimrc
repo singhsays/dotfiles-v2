@@ -50,22 +50,24 @@ set t_Co=256
 set laststatus=2
 set hidden
 set pastetoggle=<F2>
+set shell=/bin/bash
 
 syntax on
 filetype off
-set rtp+=~/.vim/bundle/Vundle
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 "Vundle Plugins
 Plugin 'VundleVim/Vundle.vim'
 
-"Plugin 'vim-airline/vim-airline'
-"Plugin 'chrisbra/csv.vim'
-"Plugin 'edkolev/promptline.vim'
-"Plugin 'edkolev/tmuxline.vim'
-"Plugin 'groenewege/vim-less'
-"Plugin 'elzr/vim-json'
-"Plugin 'avakhov/vim-yaml'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'chrisbra/csv.vim'
+Plugin 'edkolev/promptline.vim'
+Plugin 'edkolev/tmuxline.vim'
+Plugin 'groenewege/vim-less'
+Plugin 'elzr/vim-json'
+Plugin 'avakhov/vim-yaml'
 
 call vundle#end()
 filetype plugin indent on
