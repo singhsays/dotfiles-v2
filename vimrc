@@ -53,20 +53,21 @@ set pastetoggle=<F2>
 
 syntax on
 filetype off
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle
+call vundle#begin()
 
-"Bundles
-Bundle 'gmarik/vundle'
+"Vundle Plugins
+Plugin 'VundleVim/Vundle.vim'
 
-Bundle 'bling/vim-airline'
-Bundle 'chrisbra/csv.vim'
-Bundle 'edkolev/promptline.vim'
-Bundle 'edkolev/tmuxline.vim'
-Bundle 'groenewege/vim-less'
-Bundle 'elzr/vim-json'
-Bundle 'avakhov/vim-yaml'
+"Plugin 'vim-airline/vim-airline'
+"Plugin 'chrisbra/csv.vim'
+"Plugin 'edkolev/promptline.vim'
+"Plugin 'edkolev/tmuxline.vim'
+"Plugin 'groenewege/vim-less'
+"Plugin 'elzr/vim-json'
+"Plugin 'avakhov/vim-yaml'
 
+call vundle#end()
 filetype plugin indent on
 
 "Colorscheme
